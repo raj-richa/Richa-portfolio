@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a192f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;  /* Adjust size as needed */
+    color: #64ffda;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #64ffda;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.section {
+    padding: 100px 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section h2 {
+    color: #64ffda;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section h1, .section h3 {
+    color: #ccd6f6;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.section h2:not(:first-child) {
+    font-size: 36px;
+}
+
+.section p {
+    color: #8892b0;
+    max-width: 600px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Home Section */
+#home h1 {
+    font-size: 60px;
+}
+
+#home h2 {
+    font-size: 40px;
+    color: #8892b0;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.cta-btn:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+/* About Section */
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .text {
+    max-width: 600px;
+}
+
+#about .image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.tech-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tech-list li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #64ffda;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tech-list li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #64ffda;
+}
+
+/* Projects Section */
+#projects .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-image img {
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    background-color: #112240;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.project-info h3 {
+    color: #64ffda;
+    font-size: 16px;
+}
+
+.project-info h4 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.project-info p {
+    color: #a8b2d1;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-stack span {
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* Work Section */
+#work .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.work-experience {
+    background-color: #112240;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.work-experience h3 {
+    color: #64ffda;
+    font-size: 20px;
+}
+
+.duration {
+    color: #a8b2d1;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.work-experience ul {
+    list-style: none;
+}
+
+.work-experience ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: #a8b2d1;
+}
+
+.work-experience ul li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #64ffda;
+}
+
+/* Resume Section */
+#resume .content {
+    text-align: center;
+}
+
+/* Contact Section */
+#contact .content {
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+/* Social Media Sidebar */
+.social-sidebar {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-sidebar a {
+    color: #ccd6f6;
+    font-size: 24px;
+}
+
+.social-sidebar a:hover {
+    color: #64ffda;
+}

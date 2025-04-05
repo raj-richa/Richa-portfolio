@@ -1,4 +1,3 @@
-
 // Smooth scrolling for navigation links and Contact Me (both button and menu link)
 document.querySelectorAll('.nav-links a, .contact-btn, .contact-link').forEach(item => {
     item.addEventListener('click', function (e) {

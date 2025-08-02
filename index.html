@@ -1,194 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <!-- Navigation -->
-<nav class="navbar">
-    <div class="logo">richa</div>
-    <div class="hamburger">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">richa</div>
+      <div class="hamburger">
         <i class="fas fa-bars"></i>
-    </div>
-    <ul class="nav-links">
+      </div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#resume">Resume</a></li>
-        <li class="contact-item"><span class="contact-link">Contact Me</span></li>
-    </ul>
-    <div class="contact-btn">Contact Me</div>
-</nav>
+        <li class="contact-item">
+          <span class="contact-link">Contact Me</span>
+        </li>
+      </ul>
+      <div class="contact-btn">Contact Me</div>
+    </nav>
 
     <!-- Home Section -->
     <section id="home" class="section full-screen">
-        <div class="content">
-            <h1>Hello, I’m Richa Raj.</h1>
-            <h2>I craft robust Java solutions that power the digital world.</h2>
-            <p>I’m a Full Stack Java Developer passionate about building scalable, high-performance applications that solve real-world problems with clean, efficient code across both front-end and back-end technologies.</p>
-            <button class="cta-btn">Get In Touch</button>
-        </div>
+      <div class="content">
+        <h1>Hello, I’m Richa Raj.</h1>
+        <h2>I craft robust Java solutions that power the digital world.</h2>
+        <p>
+          I’m a Full Stack Java Developer passionate about building scalable,
+          high-performance applications that solve real-world problems with
+          clean, efficient code across both front-end and back-end technologies.
+        </p>
+        <button class="cta-btn">Get In Touch</button>
+      </div>
     </section>
 
     <!-- About Section -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="content">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="content">
         <div class="text">
-            <p>Hi! I’m <strong>Richa Raj</strong>, a passionate Full Stack Developer based in Pune, India. 
-            I specialize in building <strong>dynamic web applications, scalable backend systems, and seamless APIs</strong> 
-            using Java and its ecosystem. With a knack for problem-solving, I love creating efficient and 
-            high-performance solutions that drive real-world impact.</p>
-            
-            <p>I hold a <strong>Master’s degree in Computer Applications</strong> from Cochin University of Science and Technology. 
-            Since then, I’ve been actively developing end-to-end applications—designing intuitive user interfaces, 
-            architecting robust backend services, and ensuring smooth deployments.</p>
-            
-            <p>Lately, I’ve been working with:</p>
-            <ul class="tech-list">
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>Hibernate</li>
-                <li>MySQL</li>
-                <li>REST APIs</li>
-                <li>Microservices</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-            
-            <p>Always eager to explore new technologies, enhance my skills, and craft better digital experiences! 🚀</p>
+          <p>
+            Hi! I’m <strong>Richa Raj</strong>, a passionate Full Stack
+            Developer based in Pune, India. I specialize in building
+            <strong
+              >dynamic web applications, scalable backend systems, and seamless
+              APIs</strong
+            >
+            using Java and its ecosystem. With a knack for problem-solving, I
+            love creating efficient and high-performance solutions that drive
+            real-world impact.
+          </p>
+
+          <p>
+            I hold a
+            <strong>Master’s degree in Computer Applications</strong> from
+            Cochin University of Science and Technology. Since then, I’ve been
+            actively developing end-to-end applications—designing intuitive user
+            interfaces, architecting robust backend services, and ensuring
+            smooth deployments.
+          </p>
+
+          <p>Lately, I’ve been working with:</p>
+          <ul class="tech-list">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Hibernate</li>
+            <li>MySQL</li>
+            <li>REST APIs</li>
+            <li>Microservices</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+
+          <p>
+            Always eager to explore new technologies, enhance my skills, and
+            craft better digital experiences! 🚀
+          </p>
         </div>
         <div class="image">
-            <img src="images/About.jpeg" alt="Richa Raj">
+          <img src="images/About.jpeg" alt="Richa Raj" />
         </div>
-    </div>
-</section>
-
-
+      </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2>A Glimpse of My Work</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <a href="https://your-project-link-1.com" target="_blank">
-                        <img src="images/img2.jpg" alt="Project 1">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <h3>Featured Project</h3>
-                    <h4>Contact Manager</h4>
-                    <p>A Java-based application to manage contacts. Built with Spring Boot, MySQL, and deployed on AWS.</p>
-                    <div class="tech-stack">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>MySQL</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
+      <h2>A Glimpse of My Work</h2>
+      <div class="content">
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://your-project-link-1.com" target="_blank">
+              <img src="images/eco.jpg" alt="Project 1" />
+            </a>
+          </div>
+          <div class="project-info">
+            <h3>EcoRoute</h3>
+            <h4>Route Planner with Carbon Footprint Calculator</h4>
+            <p>
+              Built a full-stack Java web application using Spring Boot and REST
+              APIs to calculate distance and carbon footprint. The application
+              fetches real-time routing and environmental data from third-party
+              APIs, enabling accurate and dynamic results. The front-end was
+              developed using HTML, CSS, and JavaScript, with a focus on
+              creating a clean and user-friendly interface.
+              <strong>Tech Stack:</strong> Java, Spring Boot, REST API, HTML,
+              CSS, JavaScript, Maven.
+            </p>
+            <div class="tech-stack">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Hibernate</span>
+              <span>REST API</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>OpenRouteService API</span>
+              <span>OpenStreetMap</span>
+              <span>MySQL</span>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <a href="https://your-project-link-2.com" target="_blank">
-                        <img src="images/img2.jpg" alt="Project 2">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <h3>Featured Project</h3>
-                    <h4>Coming Soon</h4>
-                    <p>A RESTful API for project. Built with Java, Hibernate, and integrated with a MySQL database.</p>
-                    <div class="tech-stack">
-                        <span>Java</span>
-                        <span>Hibernate</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://your-project-link-2.com" target="_blank">
+              <img src="images/img2.jpg" alt="Project 2" />
+            </a>
+          </div>
+          <div class="project-info">
+            <h3>Featured Project</h3>
+            <h4>Coming Soon</h4>
+            <p>
+              A RESTful API for project. Built with Java, Hibernate, and
+              integrated with a MySQL database.
+            </p>
+            <div class="tech-stack">
+              <span>Java</span>
+              <span>Hibernate</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
- <!-- Skills Section -->
-<section id="skills" class="section">
-    <h2 class="text-center text-2xl font-bold mb-6">Technologies I Work With</h2>
-    <div class="flex justify-center items-center flex-wrap gap-4">
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java" class="h-10">
-        <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" class="h-10">
-        <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate" class="h-10">
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" class="h-10">
-        <img src="https://img.shields.io/badge/REST%20APIs-FF6F00?style=for-the-badge&logo=swagger&logoColor=white" alt="REST APIs" class="h-10">
-        <img src="https://img.shields.io/badge/Microservices-0088CC?style=for-the-badge&logo=microservices&logoColor=white" alt="Microservices" class="h-10">
-        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" class="h-10">
-        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" class="h-10">
-        <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" class="h-10">
-        <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" class="h-10">
-        <img src="https://img.shields.io/badge/OOPs-007ACC?style=for-the-badge&logo=cplusplus&logoColor=white" alt="OOPs" class="h-10">
-        <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white" alt="Eclipse" class="h-10">
-        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" class="h-10">
-        <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white" alt="Spring Security" class="h-10">
-        <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" class="h-10">
-    </div>
-</section>
-
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="text-center text-2xl font-bold mb-6">
+        Technologies I Work With
+      </h2>
+      <div class="flex justify-center items-center flex-wrap gap-4">
+        <img
+          src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"
+          alt="Java"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"
+          alt="Spring Boot"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white"
+          alt="Hibernate"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+          alt="MySQL"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/REST%20APIs-FF6F00?style=for-the-badge&logo=swagger&logoColor=white"
+          alt="REST APIs"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Microservices-0088CC?style=for-the-badge&logo=microservices&logoColor=white"
+          alt="Microservices"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"
+          alt="AWS"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+          alt="Git"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+          alt="HTML"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+          alt="CSS"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/OOPs-007ACC?style=for-the-badge&logo=cplusplus&logoColor=white"
+          alt="OOPs"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white"
+          alt="Eclipse"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"
+          alt="PostgreSQL"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white"
+          alt="Spring Security"
+          class="h-10"
+        />
+        <img
+          src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
+          alt="Postman"
+          class="h-10"
+        />
+      </div>
+    </section>
 
     <!-- Work Section -->
     <section id="work" class="section">
-        <h2>Where I’ve Worked</h2>
-        <div class="content">
-            <div class="work-experience">
-                <h3>Full Stack Developer @ TATA CONSULTANCY SERVICES</h3>
-                <p class="duration">[7 July 2022] - [Present]</p>
-                <ul>
-                    <li>Developed and maintained backend systems using Java and Spring Boot, improving application performance by 30%.</li>
-                    <li>Designed and implemented RESTful APIs to support front-end applications, ensuring seamless data integration.</li>
-                    <li>Optimized database queries with Hibernate, reducing response times for critical operations.</li>
-                    <li>Monitored and maintained application deployments and logs using AWS, ensuring smooth build and
-                        deployment processes.</li>
-                    <li>Developed a full-stack order management system using Java, Spring Boot, JavaScript, and MySQL,
-                        improving efficiency by 70%.</li>
-                    <li>Participated in PRD sessions to align requirements with business goals, enhancing project outcomes.</li>
-                    <li>Designed and implemented APIs and features, increasing user engagement by 65%.</li>
-                    <li>Optimized database performance, reducing load times by 50% and enhancing overall system efficiency.</li>
-                    <li>Ensured responsive design and cross-device compatibility, delivering a seamless and intuitive user
-                        experience.</li>
-                </ul>
-            </div>
+      <h2>Where I’ve Worked</h2>
+      <div class="content">
+        <div class="work-experience">
+          <h3>Full Stack Developer @ TATA CONSULTANCY SERVICES</h3>
+          <p class="duration">[7 July 2022] - [Present]</p>
+          <ul>
+            <li>
+              Developed and maintained backend systems using Java and Spring
+              Boot, improving application performance by 30%.
+            </li>
+            <li>
+              Designed and implemented RESTful APIs to support front-end
+              applications, ensuring seamless data integration.
+            </li>
+            <li>
+              Optimized database queries with Hibernate, reducing response times
+              for critical operations.
+            </li>
+            <li>
+              Monitored and maintained application deployments and logs using
+              AWS, ensuring smooth build and deployment processes.
+            </li>
+            <li>
+              Developed a full-stack order management system using Java, Spring
+              Boot, JavaScript, and MySQL, improving efficiency by 70%.
+            </li>
+            <li>
+              Participated in PRD sessions to align requirements with business
+              goals, enhancing project outcomes.
+            </li>
+            <li>
+              Designed and implemented APIs and features, increasing user
+              engagement by 65%.
+            </li>
+            <li>
+              Optimized database performance, reducing load times by 50% and
+              enhancing overall system efficiency.
+            </li>
+            <li>
+              Ensured responsive design and cross-device compatibility,
+              delivering a seamless and intuitive user experience.
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
-  <!-- Contact Section -->
-<section id="contact" class="section">
-    <h2 class="text-2xl font-bold mb-6">What’s Next?</h2> <!-- Left-aligned heading -->
-    <div class="content text-center">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="text-2xl font-bold mb-6">What’s Next?</h2>
+      <!-- Left-aligned heading -->
+      <div class="content text-center">
         <h3 class="text-xl font-semibold">Get In Touch</h3>
         <p class="text-gray-600 max-w-lg mx-auto">
-            I’m currently looking for new opportunities, and my inbox is always open.  
-            Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+          I’m currently looking for new opportunities, and my inbox is always
+          open. Whether you have a question or just want to say hi, I’ll try my
+          best to get back to you!
         </p>
         <a href="mailto:richaraj069@gmail.com" class="cta-btn inline-block mt-4 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600">
             Say Hello
         </a>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Richa Raj. All rights reserved.</p>
+      <p>© 2025 Richa Raj. All rights reserved.</p>
     </footer>
 
     <!-- Social Media Sidebar -->
     <div class="social-sidebar">
-        <a href="https://github.com/Rjricha" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/richa-raj-264639201/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Rjricha" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/richa-raj-264639201/" target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -11,7 +11,7 @@ document.querySelectorAll('.nav-links a, .contact-btn, .contact-link').forEach(i
         const targetSection = document.getElementById(targetId);
 
         if (targetId === 'resume') {
-            window.open('https://drive.google.com/file/d/1U9kUpXe-WTidhP_neeQzC9qiIUE19vhE/view?usp=sharing', '_blank');
+            window.open('https://drive.google.com/file/d/1QrHL2pKpCdHyP1e91zclEkWW2la99z5j/view?usp=sharing', '_blank');
         } else {
             window.scrollTo({
                 top: targetSection.offsetTop - 60,
